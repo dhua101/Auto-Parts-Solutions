@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Auto Solutions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-yellow.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <style>
+        img {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="w3-top">
+        <ul class="w3-navbar w3-white w3-top w3-left-align"style="height:100px">
+            <li class="w3-hide-small"><img src="http://localhost/AutoSolutions/car_outline_modified_clip_art_19097.jpg" style="width:50%"></li>
+            <li class="w3-hide-small w3-center" style="margin-top:25px;"><font color="brown">My Store:</font> London, Ontario | Find a Store</li>
+            <li class="w3-hide-small w3-right"></li>
+            <li class="w3-hide-small w3-right" style="margin-top:25px;"><i class="fa fa-mobile-phone"></i> 1-888-314-6412</li>
+        </ul>
+        <ul class="w3-navbar w3-theme w3-top w3-left-align" style="margin-top:100px;">
+            <li class="w3-opennav w3-right w3-hide-large">
+                <a class="w3-hover-white w3-theme-l2" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-search"></i></a>
+            </li>
+            <li class="w3-hide-small"><a href="#" class="w3-theme-l2">Auto Solutions</a></li>
+            <li class="w3-hide-small"><a href="learnmore.php" class="w3-hover-white">About Auto Solutions</a></li>
+            <li class="w3-hide-small"><a href="catalog.php" class="w3-hover-white">Catalog</a></li>
+            <li class="w3-hide-small"><a href="partsaccessories.php" class="w3-hover-white">Parts and Accessories</a></li>
+            <li class="w3-hide-small"><a href="#" class="w3-hover-white">Contact</a></li>
+            <li class="w3-hide-small w3-right">
+            </li>
+        </ul>
+    </div>
+
+    <nav class="w3-sidenav w3-collapse w3-theme-l3 w3-animate-left" style="z-index:3;width:150px;margin-top:-110px;" id="mySidenav">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <h4><b>Menu</b></h4>
+        <p>Parts</p>
+        <a href="#" class="w3-hover-black">Wheels</a>
+        <a href="#" class="w3-hover-black">Suspensions</a>
+        <a href="#" class="w3-hover-black">Brakes</a>
+        <a href="#" class="w3-hover-black">Headlights</a>
+        <a href="#" class="w3-hover-black">Fog Lights</a>
+        <a href="#" class="w3-hover-black">Tail Lights</a>
+    </nav>
+
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- Start Main -->
+    <div class="w3-main" style="margin-left:150px; margin-top:250px;">
+
+        <div class="w3-panel w3-center w3-border w3-leftbar w3-rightbar w3-border-green">
+            <h1 class="w3-animate-top">Auto Solutions</h1>
+            <p>Welcome to Auto Solutions. Auto Solutions is where auto and vehicle parts and accessories are on sale here. Any parts needed for your vehicle? Come get them here at Auto Solutions.</p>
+        </div>
+
+        <div class="w3-container w3-center w3-border w3-border w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-green">
+            <h5>News</h5>
+        </div>
+        <div class="w3-container w3-border w3-border w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-green">
+            <table>
+                <tr>
+                    <td style="width:100px"><li>17/10/16</li></td><td>Auto Solutions website now active</td>
+                </tr>
+            </table>
+        </div>
+
+        <br><br>
+
+        <div class="w3-container w3-half w3-center w3-border w3-border w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-green">
+            <h5>Feature Item</h5>
+        </div>
+
+        <div class="w3-container w3-half w3-center w3-border w3-border w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-green">
+            <h5>Recently added</h5>
+        </div>
+
+        <div class="w3-container w3-border w3-border w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-green w3-half">
+            <img src="#">
+        </div>
+        <div class="w3-container w3-border w3-border w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-green w3-half">
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+
+    <!-- End Main -->
+    </div>
+
+    <script>
+    // Get the Sidenav
+    var mySidenav = document.getElementById("mySidenav");
+
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
+
+    // Toggle between showing and hiding the sidenav, and add overlay effect
+    function w3_open() {
+        if (mySidenav.style.display === 'block') {
+            mySidenav.style.display = 'none';
+            overlayBg.style.display = "none";
+        } else {
+            mySidenav.style.display = 'block';
+            overlayBg.style.display = "block";
+        }
+    }
+
+    // Close the sidenav with the close button
+    function w3_close() {
+        mySidenav.style.display = "none";
+        overlayBg.style.display = "none";
+    }
+    </script>
+</body>
+</html>
