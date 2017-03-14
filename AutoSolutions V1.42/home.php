@@ -421,7 +421,6 @@
 
                 <br>
                 
-                <a href="adminsignin.php" class="w3-hover-white">Admin Section</a>
                 <a href="contact.php">Contact us</a>
             </div>
         </div>
